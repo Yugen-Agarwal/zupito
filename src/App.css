@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.home-main-title {
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+}
+
+.home-main-description {
+  font-size: 15.3px;
+  font-weight: 600;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+.home-title {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.home-title-emailprecision{
+  font-size: 3.0rem;
+  font-weight: 600;
+  line-height: 1.15;
+  letter-spacing:-1.87px;
+}
+
+
+.home-description-emailfinder-bottom{
+  font-size: 1.156rem;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: 0;
+}
+
+
+.home-subtitle {
+  font-size: 19.5px;
+  font-weight: 600;
+  line-height: 42.5px;
+  letter-spacing: -1.275px;
+}
+
+.home-subtitle-emailverified{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 42.5px;
+  letter-spacing:-1.02px;
+}
+
+.home-subtitle-emailfinder{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 42.5px;
+  letter-spacing: -0.85px;
+}
+
+.home-subtitle-actionpage{
+  font-size: 2.0rem;
+  font-weight: 600;
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+}
+
+.actionpage-description{
+  font-weight: 400;
+  line-height: 30.4px;
+  letter-spacing: 0;
+}
+
+.home-description-actionpage{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30.1px;
+  letter-spacing: 0;
+}
+
+.home-description {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+.home-description-emailfinder {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+}
+
+.home-description-emailverified{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0;
+}
+
+.home-description-emailprecision{
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.home-description-aciton {
+  font-size: 13.6px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+.home-description-card {
+  font-size: 13.6px;
+  font-weight: 400;
+  line-height: 1.80;
+  letter-spacing: 0;
+  word-spacing: 0.85px;
+}
+.home-description-plugin {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+[data-animate] {
+  opacity: 0;
+  transform: translate3d(0, 18px, 0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+  will-change: opacity, transform;
+}
+
+[data-animate="fade-right"] {
+  transform: translate3d(-18px, 0, 0);
+}
+
+[data-animate="fade-left"] {
+  transform: translate3d(18px, 0, 0);
+}
+
+[data-animate].is-visible {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[data-animate-item] {
+  opacity: 0;
+  transform: translate3d(0, 10.2px, 0);
+  transition: opacity 0.45s ease, transform 0.45s ease;
+  will-change: opacity, transform;
+}
+
+.is-visible [data-animate-item] {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[data-animate-item="scale"] {
+  transform: scale(0.96);
+}
+
+.is-visible [data-animate-item="scale"] {
+  transform: scale(1);
+}
+
+[data-hover="lift"] {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  will-change: transform;
+}
+
+[data-hover="lift"]:hover {
+  transform: translateY(-3.4px);
+}
+
+[data-hover="underline"] {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+[data-hover="underline"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s ease;
+  opacity: 0.4;
+}
+
+[data-hover="underline"]:hover::after {
+  transform: scaleX(1);
+}
+
+[data-hover="icon-tilt"] img {
+  transition: transform 0.35s ease;
+  transform-origin: center;
+}
+
+[data-hover="icon-tilt"]:hover img {
+  transform: translateY(-1.7px) rotate(-3deg);
+}
+
+[data-hover="pulse-dot"]::before,
+[data-hover="pulse-dot"]::after {
+  transition: transform 0.4s ease;
+}
+
+[data-hover="pulse-dot"]:hover::before,
+[data-hover="pulse-dot"]:hover::after {
+  transform: scale(1.15);
+}
+
+@keyframes hero-word-enter {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes hero-word-exit {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-hero-word-enter {
+  animation: hero-word-enter 0.42s ease forwards;
+}
+
+.animate-hero-word-exit {
+  animation: hero-word-exit 0.42s ease forwards;
+}
+
+.email-finder-label {
+  display: inline-block;
+  transform: translateX(-10.2px);
+  opacity: 0;
+  animation: email-finder-text 0.9s cubic-bezier(0.25, 0.8, 0.35, 1) forwards;
+}
+
+@keyframes email-finder-text {
+  0% {
+    transform: translateX(-23.8px);
+    opacity: 0;
+  }
+  65% {
+    transform: translateX(-3.4px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate],
+  [data-animate="fade-right"],
+  [data-animate="fade-left"] {
+    opacity: 1;
+    transform: none;
+  }
+
+  [data-animate-item],
+  [data-animate-item="scale"],
+  [data-hover="lift"],
+  [data-hover="underline"],
+  [data-hover="icon-tilt"],
+  [data-hover="pulse-dot"],
+  .animate-hero-word-enter,
+  .animate-hero-word-exit,
+  .email-finder-label {
+    transition: none;
+    animation: none;
+  }
+}
+
+/* Reduce font sizes for 1024px screens (lg breakpoint) */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header-nav-link {
+    font-size: 15.3px !important;
+  }
+  
+  .header-button-text {
+    font-size: 15.3px !important;
+  }
+}
+@media (max-width: 640px) {
+  .home-title {
+    font-size: 28.9px !important;
+  }
+}
+@media (max-width: 470px) {
+  .home-subtitle {
+    font-size: 18.7px !important;
+  }
+  .home-title {
+    font-size: 27.2px !important;
+  }
+}
+@media (max-width: 445px) {
+  .home-title {
+    font-size: 25.5px !important;
+  }
+}
