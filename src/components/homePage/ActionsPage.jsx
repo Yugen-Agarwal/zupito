@@ -9,7 +9,7 @@ const ActionsPage = () => {
       className="relative w-full bg-[#FAFBFF] overflow-hidden !mt-4"
     >
       {/* Outer container mirrors HeroSection spacing rhythm */}
-      <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-[9.031rem] py-10 lg:py-14">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-10 lg:py-14">
         <div className="max-w-auto lg:max-w-[1250px] mx-auto relative">
           {/* Header copy */}
           <div className="text-center">

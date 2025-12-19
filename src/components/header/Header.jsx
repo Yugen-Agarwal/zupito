@@ -43,39 +43,38 @@ function Header() {
 
   return (
     <header
-      className="relative w-full h-[61.2px] sm:h-[64.6px] md:h-[68px] lg:h-[105.4px] bg-white/80 border-b border-black"
+      className="relative w-full h-14 sm:h-16 md:h-[70px] lg:h-20 bg-white/80 border-b border-black"
       style={{ zIndex: 60 }}
     >
       {/* Container with responsive padding */}
       <div className="w-full h-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">
         {/* Content wrapper with max-width 1280px and space-between layout */}
-        <div className="max-w-full lg:max-w-[1250px] h-full mx-auto flex items-center justify-between">        
-    {/* Logo */}
+        <div className="max-w-full lg:max-w-[1250px] h-full mx-auto flex items-center justify-between">
+          {/* Logo */}
           <div className="shrink-0">
             <a href="#">
-            <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-8 sm:h-9 md:h-10 lg:h-11 w-auto" />
+              <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
             </a>
           </div>
 
           {/* Desktop Navigation Links */}
           <nav className="hidden lg:flex items-center gap-4 xl:gap-8 relative px-4">
             <div className="relative" ref={dropdownRef}>
-              <button 
+              <button
                 onClick={toggleProductDropdown}
-                className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors header-nav-link"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+                className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
               >
                 Product
-                <svg 
+                <svg
                   className={`w-4 h-4 transition-transform ${isProductDropdownOpen ? 'rotate-180' : ''}`}
-                  fill="none" 
-                  stroke="currentColor" 
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              
+
               {/* Product Dropdown Menu */}
               {isProductDropdownOpen && (
                 <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-[#EEF0F3] py-2 z-50">
@@ -110,50 +109,45 @@ function Header() {
                 </div>
               )}
             </div>
-            
-            <Link 
-              to="/use-cases" 
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors header-nav-link"
-              style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+
+            <Link
+              to="/use-cases"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none "
             >
               Use Cases
             </Link>
-            
-            <Link 
-              to="/pricing" 
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors header-nav-link"
-              style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+
+            <Link
+              to="/pricing"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
             >
               Pricing
             </Link>
-            
-            <button 
-              className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors header-nav-link"
-              style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+
+            <button
+              className="flex items-center gap-1 text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
             >
               Resources
-              <svg 
-                className="w-3.5 h-3.5" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
             </button>
-            
-            <a 
-              href="#blog" 
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors header-nav-link"
-              style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+
+            <a
+              href="#blog"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
             >
               Blog
             </a>
-            
-            <Link 
-              to="/deals" 
-              className="text-[#132436] hover:text-[#FF6B35] transition-colors header-nav-link"
-              style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+
+            <Link
+              to="/deals"
+              className="text-[#132436] hover:text-[#FF6B35] transition-colors font-[Manrope] font-semibold text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none"
             >
               Deals
             </Link>
@@ -162,40 +156,40 @@ function Header() {
           {/* Desktop Action Buttons */}
           <div className="hidden lg:flex items-center shrink-0 gap-5 xl:gap-3">
             {/* Start for Free Button */}
-            <button 
-              className="flex w-[181.2px] h-[55.3px] px-5 py-4 gap-1.5 items-center justify-center transition-colors rounded-[34px] bg-[#F6F6F6] hover:bg-[#EEEEEE]"
+            <button
+              className="flex items-center lg:w-[159.5px] lg:h-[48px] px-4 sm:px-5 py-2 sm:py-3 lg:py-4 rounded-[34px] bg-[#F6F6F6] hover:bg-[#EEEEEE]"
             >
-              <img 
-                src="/images/user-rounded.svg" 
-                alt="User icon" 
+              <img
+                src="/images/user-rounded.svg"
+                alt="User icon"
                 className="w-5 h-5"
               />
-              <span 
-                className="text-[#132436] whitespace-nowrap header-button-text"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+              <span
+                className="text-[#132436] whitespace-nowrap text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none "
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '100%' }}
               >
                 Start for Free
               </span>
             </button>
 
             {/* Log In Button */}
-            <button 
-              className="flex w-[151.4px] h-[52.7px] px-5 py-4 gap-1.5 items-center justify-center transition-colors rounded-[42.5px] bg-[#EB3609] hover:bg-[#FF6B35]"
+            <button
+              className="flex lg:w-[159.5px] lg:h-[48px] px-5 py-4 gap-1.5 items-center justify-center transition-colors rounded-[42.5px] bg-[#EB3609] hover:bg-[#FF6B35]"
             >
-              <span 
-                className="text-white whitespace-nowrap header-button-text"
-                style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '100%' }}
+              <span
+                className="text-white whitespace-nowrap text-[13px] sm:text-[14px] md:text-[15px] lg:text-[15.3px] leading-none "
+                style={{ fontFamily: 'Manrope', fontWeight: 600, lineHeight: '100%' }}
               >
                 Log In
               </span>
-              <img 
-                src="/images/right-arrow.svg" 
-                alt="Right arrow" 
+              <img
+                src="/images/right-arrow.svg"
+                alt="Right arrow"
                 className="w-5 h-5"
               />
             </button>
           </div>
- 
+
           {/* Hamburger Menu Button - Mobile/Tablet */}
           <button
             onClick={toggleMobileMenu}
@@ -203,10 +197,10 @@ function Header() {
             aria-label="Toggle menu"
           >
             {/* Hamburger icon */}
-            <svg 
-              className="w-6 h-6" 
-              fill="none" 
-              stroke="currentColor" 
+            <svg
+              className="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
               viewBox="0 0 24 24"
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
@@ -241,17 +235,17 @@ function Header() {
             <div className="shrink-0">
               <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-9 md:h-10 w-auto" />
             </div>
-            
+
             {/* Close Button */}
             <button
               onClick={closeMobileMenu}
               className="flex items-center justify-center w-10 h-10 text-gray-800 hover:text-[#FF6B35] transition-colors"
               aria-label="Close menu"
             >
-              <svg 
-                className="w-6 h-6" 
-                fill="none" 
-                stroke="currentColor" 
+              <svg
+                className="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
                 viewBox="0 0 24 24"
               >
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
@@ -264,22 +258,22 @@ function Header() {
             <nav className="flex flex-col space-y-6">
               {/* Mobile Navigation Links */}
               <div>
-                <button 
+                <button
                   onClick={toggleMobileProductDropdown}
                   className="flex items-center justify-between w-full text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
                   style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '15.3px', lineHeight: '110%' }}
                 >
                   <span>Product</span>
-                  <svg 
+                  <svg
                     className={`w-4 h-4 transition-transform ${isMobileProductDropdownOpen ? 'rotate-180' : ''}`}
-                    fill="none" 
-                    stroke="currentColor" 
+                    fill="none"
+                    stroke="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </button>
-                
+
                 {/* Mobile Product Dropdown */}
                 {isMobileProductDropdownOpen && (
                   <div className="pl-4 mt-2 space-y-2">
@@ -314,52 +308,52 @@ function Header() {
                   </div>
                 )}
               </div>
-              
-              <Link 
-                to="/use-cases" 
+
+              <Link
+                to="/use-cases"
                 onClick={closeMobileMenu}
                 className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
                 style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
               >
                 Use Cases
               </Link>
-              
-              <Link 
-                to="/pricing" 
+
+              <Link
+                to="/pricing"
                 onClick={closeMobileMenu}
                 className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
                 style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
               >
                 Pricing
               </Link>
-              
-              <button 
+
+              <button
                 onClick={closeMobileMenu}
                 className="flex items-center justify-between text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
                 style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
               >
                 <span>Resources</span>
-                <svg 
-                  className="w-4 h-4" 
-                  fill="none" 
-                  stroke="currentColor" 
+                <svg
+                  className="w-4 h-4"
+                  fill="none"
+                  stroke="currentColor"
                   viewBox="0 0 24 24"
                 >
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                 </svg>
               </button>
-              
-              <a 
-                href="#blog" 
+
+              <a
+                href="#blog"
                 onClick={closeMobileMenu}
                 className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
                 style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
               >
                 Blog
               </a>
-              
-              <Link 
-                to="/deals" 
+
+              <Link
+                to="/deals"
                 onClick={closeMobileMenu}
                 className="text-[#132436] hover:text-[#FF6B35] transition-colors py-2"
                 style={{ fontFamily: 'Manrope', fontWeight: 600, fontSize: '13.5px', lineHeight: '110%' }}
@@ -370,21 +364,21 @@ function Header() {
               {/* Mobile Action Buttons */}
               <div className="flex flex-col gap-3 pt-6 border-t border-[#EEF0F3]">
                 {/* Start for Free Button */}
-                <button 
+                <button
                   onClick={closeMobileMenu}
                   className="flex items-center justify-center transition-colors rounded-[34px] bg-[#F6F6F6] hover:bg-[#EEEEEE] w-full"
-                  style={{ 
-                    height: '40.8px', 
+                  style={{
+                    height: '40.8px',
                     padding: '10.2px 17px',
                     gap: '8.5px'
                   }}
                 >
-                  <img 
-                    src="/images/user-rounded.svg" 
-                    alt="User icon" 
+                  <img
+                    src="/images/user-rounded.svg"
+                    alt="User icon"
                     className="w-5 h-5"
                   />
-                  <span 
+                  <span
                     className="text-[#132436] whitespace-nowrap"
                     style={{ fontFamily: 'Manrope', fontWeight: 700, fontSize: '15.3px', lineHeight: '110%' }}
                   >
@@ -393,24 +387,24 @@ function Header() {
                 </button>
 
                 {/* Log In Button */}
-                <button 
+                <button
                   onClick={closeMobileMenu}
                   className="flex items-center justify-center transition-colors rounded-[42.5px] bg-[#EB3609] hover:bg-[#FF6B35] w-full"
-                  style={{ 
-                    height: '40.8px', 
+                  style={{
+                    height: '40.8px',
                     padding: '10.2px 23.8px',
                     gap: '8.5px'
                   }}
                 >
-                  <span 
+                  <span
                     className="text-white whitespace-nowrap"
                     style={{ fontFamily: 'Manrope', fontWeight: 700, fontSize: '15.3px', lineHeight: '110%' }}
                   >
                     Log In
                   </span>
-                  <img 
-                    src="/images/right-arrow.svg" 
-                    alt="Right arrow" 
+                  <img
+                    src="/images/right-arrow.svg"
+                    alt="Right arrow"
                     className="w-5 h-5"
                   />
                 </button>

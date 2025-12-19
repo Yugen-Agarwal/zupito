@@ -1,7 +1,7 @@
 function PromotionalBanner() {
   return (
     <div
-      className="flex relative w-full bg-[#FDEBE6] h-auto min-h-[51px] sm:min-h-[59.5px] lg:h-[68px] items-center justify-center py-2 sm:py-3 lg:py-0"
+      className="flex relative w-full bg-[#FDEBE6] h-auto min-h-[40px] sm:min-h-[45px] lg:h-[50px] items-center justify-center py-2 sm:py-3 lg:py-0"
       style={{ zIndex: 70 }}
     >
       <div className="w-full max-w-[1632px] mx-auto px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12">

@@ -36,7 +36,7 @@ function HeroSection() {
       >
         {/* Dots/backdrop spacing wrapper to mimic Figma breathing room */}
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pb-10">
-          <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
+          <div className="max-w-[1250px] mx-auto relative">
             <div
               className="grid grid-cols-1 lg:grid-cols-2 
               items-center lg:items-start  lg:gap-x-8
@@ -44,45 +44,45 @@ function HeroSection() {
             >
               {/* Copy */}
               <div className="max-w-full lg:max-w-[600px] flex flex-col items-start sm:items-center lg:items-start  pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
-                <h1
-                  data-animate-item
-                  style={{ transitionDelay: "0.05s" }}
-                  className="home-main-title text-[2.5rem] sm:text-[2.8rem] md:text-[3rem] lg:text-[3.4rem] xl:text-[3rem] leading-[1.08] text-[#132436] font-bold font-['Inter']"
-                >
-                  {/* Line 1: AI Tool To Connect */}
-                  <span className="block sm:whitespace-nowrap">
-                    <span>AI Tool To </span>
-                    <span
-                      aria-live="polite"
-                      className={`inline-block text-[#EB3609] font-extrabold transition-all duration-300 ease-in-out transform ${isFading ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0"
-                        }`}
-                    >
-                      {ROTATING_WORDS[activeWordIndex]}
+                <div className="w-full">
+                  <h1
+                    data-animate-item
+                    style={{ transitionDelay: "0.05s" }}
+                    className="home-main-title text-[2rem] sm:text-[2.3rem] md:text-[2.5rem] lg:text-[2.8rem] xl:text-[3rem] leading-[1.08] text-[#132436] font-bold font-['Inter']"
+                  >
+                    {/* Line 1: AI Tool To Connect */}
+                    <span className="block sm:whitespace-nowrap">
+                      <span>AI Tool To </span>
+                      <span
+                        aria-live="polite"
+                        className={`inline-block text-[#EB3609] font-extrabold transition-all duration-300 ease-in-out transform ${isFading ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0"
+                          }`}
+                      >
+                        {ROTATING_WORDS[activeWordIndex]}
+                      </span>
                     </span>
-                  </span>
 
-                  {/* Line 2: Emails [badge] Instantly */}
-                  <span className="block sm:whitespace-nowrap flex items-center flex-wrap mt-2">
-                    <span>Emails</span>
-                    <span className="inline-flex items-center justify-center mx-2 relative top-[-2px]">
-                      <img
-                        src="/images/load.svg"
-                        alt=""
-                        className="w-[1.5rem] h-[1.5rem] sm:w-[1.9rem] sm:h-[1.9rem] md:w-[2.55rem] md:h-[2.55rem] lg:w-[2.97rem] lg:h-[2.97rem] xl:w-[3.6rem] xl:h-[3.6rem]"
-                      />
+                    {/* Line 2: Emails [badge] Instantly */}
+                    <span className="sm:whitespace-nowrap flex items-center flex-wrap mt-2">
+                      <span>Emails</span>
+                      <span className="inline-flex items-center justify-center mx-2 relative top-[-2px]">
+                        <img
+                          src="/images/load.svg"
+                          alt=""
+                          className="w-6 h-6 sm:w-[1.9rem] sm:h-[1.9rem] md:w-[2.55rem] md:h-[2.55rem] lg:w-[2.97rem] lg:h-[2.97rem] xl:w-[3.6rem] xl:h-[3.6rem]"
+                        />
+                      </span>
+                      <span>Instantly</span>
                     </span>
-                    <span>Instantly</span>
-                  </span>
-                </h1>
-                <p
-                  data-animate-item
-                  style={{ transitionDelay: "0.15s" }}
-                  className="home-description text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.65] font-['Manrope'] max-w-full sm:max-w-[26rem] mt-6 sm:mt-7"
-                >
-                  Simplify outreach with Zupitu's AI Email Verifier & Finder – validate emails, find business contacts, and boost deliverability.
-                </p>
-
-
+                  </h1>
+                  <p
+                    data-animate-item
+                    style={{ transitionDelay: "0.15s" }}
+                    className="home-description text-[#546779] text-[14px] sm:text-[16px] md:text-[18px] leading-[1.65] font-['Manrope'] max-w-full sm:max-w-[26rem] mt-6 sm:mt-7"
+                  >
+                    Simplify outreach with Zupitu's AI Email Verifier & Finder – validate emails, find business contacts, and boost deliverability.
+                  </p>
+                </div>
                 {/* CTAs */}
                 <div
                   data-animate-item
@@ -166,11 +166,11 @@ function HeroSection() {
                 style={{ transitionDelay: "0.35s" }}
                 className="order-1 lg:order-last relative lg:pt-0"
               >
-                <div className="lg:absolute lg:right-0 full h-[15.937rem] sm:h-[20.1869rem] md:h-[23.9056rem] lg:h-[26.5617rem] xl:h-[31.8741rem] 2xl:h-[36.1239rem]">
+                <div className="">
                   <img
                     src="/images/Frame 1321317782.png"
                     alt="Zupito email automation flow"
-                    className="w-full h-full object-contain select-none pointer-events-none [image-rendering:auto]"
+                    className="w-full h-full  select-none pointer-events-none [image-rendering:auto]"
                   />
                 </div>
               </div>

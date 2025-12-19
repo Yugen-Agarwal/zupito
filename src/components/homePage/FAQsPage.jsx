@@ -36,10 +36,10 @@ const FAQsPage = () => {
       style={{ background: 'var(--color-white-solid, #FFFFFF)' }}
     >
       {/* Outer container with responsive padding */}
-      <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-[9.031rem] py-8 lg:py-10 overflow-visible">
+      <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 py-8 lg:py-10 overflow-visible">
         <div className="max-w-full lg:max-w-[1250px] mx-auto relative">
           {/* Header Section - max-width 85.125rem */}
-          <div className="w-full lg:max-w-6xl mx-auto">
+          <div className="w-full">
             {/* FAQ Tag - width: 5.3125rem, height: 3.0625rem */}
             <div
               data-animate-item

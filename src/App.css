@@ -314,17 +314,6 @@ body {
   }
 }
 
-/* Reduce font sizes for 1024px screens (lg breakpoint) */
-@media (min-width: 1024px) and (max-width: 1279px) {
-  .header-nav-link {
-    font-size: 15.3px !important;
-  }
-
-  .header-button-text {
-    font-size: 15.3px !important;
-  }
-}
-
 @media (max-width: 640px) {
   .home-title {
     font-size: 28.9px !important;
