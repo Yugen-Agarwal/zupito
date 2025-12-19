@@ -15,10 +15,10 @@ const Productivity = () => {
           {/* Top copy row (second image sizing intent) */}
           <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1.0fr] items-start">
             {/* Headline block on the left */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 text-center lg:text-left">
               <div
                 data-animate-item
-                className="inline-flex font-['Manrope'] items-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] px-3 py-2 h-[1.8063rem] w-fit text-[0.7438rem] font-bold text-[#132436] shadow-[0_0.0625rem_0_0_#0000000A]"
+                className="inline-flex font-['Manrope'] items-center gap-[0.3188rem] rounded-[2.6562rem] bg-[#F6F6F6] px-3 py-2 h-[1.8063rem] w-fit mx-auto lg:mx-0 text-[0.7438rem] font-bold text-[#132436] shadow-[0_0.0625rem_0_0_#0000000A]"
               >
                 <span className="w-2.5 h-2.5 rounded-full bg-[#5B7CF5]" />
                 <span>Type Something</span>
@@ -44,11 +44,11 @@ const Productivity = () => {
             </div>
 
             {/* Right description copy */}
-            <div>
+            <div className="text-center mt-4 lg:mt-0 lg:text-left ">
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.15s" }}
-                className="home-description text-[#546779] font-['Manrope'] max-w-[500px] text-[20.4px]"
+                className="home-description text-[#546779] font-['Manrope'] max-w-[500px] text-[20.4px] mx-auto lg:mx-0"
               >
                 Zupitu's user-friendly interface simplifies prospecting with
                 intuitive tools for high-quality data generation.
@@ -56,7 +56,7 @@ const Productivity = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.22s" }}
-                className="home-description  text-[#546779] font-['Manrope'] text-[20.4px]"
+                className="home-description  text-[#546779] font-['Manrope'] text-[20.4px] mx-auto lg:mx-0 max-w-[500px]"
               >
                 It supports seamless team collaboration, easily handles large
                 data volumes, and offers cost-effective scalability for growing
@@ -152,8 +152,8 @@ const Productivity = () => {
             </div>
 
             {/* Right column feature list (ninth + tenth + eleventh images) */}
-            <div className="w-full max-w-[31.4491rem] lg:max-w-none">
-              <div className="grid grid-cols-1 gap-5 md:gap-6 h-full">
+            <div className="w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-5 md:gap-6 h-full">
                 {[
                   {
                     title: "Manage Multiple Teams",

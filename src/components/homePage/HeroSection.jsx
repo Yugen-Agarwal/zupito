@@ -38,12 +38,12 @@ function HeroSection() {
         <div className="w-full px-4 sm:px-6 md:px-8 lg:px-10 xl:px-12 pb-10">
           <div className="max-w-[1250px] mx-auto relative">
             <div
-              className="grid grid-cols-1 lg:grid-cols-2 
-              items-center lg:items-start  lg:gap-x-8
+              className="grid grid-cols-1 md:grid-cols-2 
+              items-center md:items-start gap-x-4 md:gap-x-6 lg:gap-x-8
                [@media(min-width:64rem)_and_(max-width:79.9375rem)]:min-h-[calc(100vh-7.5rem)] "
             >
               {/* Copy */}
-              <div className="max-w-full lg:max-w-[600px] flex flex-col items-start sm:items-center lg:items-start  pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
+              <div className="max-w-full md:max-w-[600px] flex flex-col items-start sm:items-center md:items-start pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
                 <div className="w-full">
                   <h1
                     data-animate-item
@@ -164,13 +164,13 @@ function HeroSection() {
               <div
                 data-animate-item="scale"
                 style={{ transitionDelay: "0.35s" }}
-                className="order-1 lg:order-last relative lg:pt-0"
+                className="order-1 md:order-last relative "
               >
-                <div className="">
+                <div className="w-full max-w-full">
                   <img
                     src="/images/Frame 1321317782.png"
                     alt="Zupito email automation flow"
-                    className="w-full h-full  select-none pointer-events-none [image-rendering:auto]"
+                    className="w-full max-w-[280px] sm:max-w-[350px] md:max-w-[420px] lg:max-w-[520px] xl:max-w-full h-auto mx-auto md:mx-0 select-none pointer-events-none [image-rendering:auto]"
                   />
                 </div>
               </div>

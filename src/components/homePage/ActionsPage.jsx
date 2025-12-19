@@ -76,7 +76,7 @@ const ActionsPage = () => {
               className="hidden lg:block absolute left-1/2 -translate-x-1/2 inset-y-12 w-0 border-l lg:px-10! border-[#132436] opacity-10 pointer-events-none"
             /> */}
 
-            <div className="relative h-auto lg:h-[30.3866rem] z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 lg:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-stretch">
+            <div className="relative h-auto lg:h-[30.3866rem] z-[1] grid grid-cols-1 p-4 sm:p-6 md:p-8 md:grid-cols-2 gap-6 md:gap-8 lg:gap-0 items-stretch">
               {/* Left panel (copy) sized 561x451 at 3.75rem offset */}
               <div className="relative rounded-[0.85rem]  flex flex-col justify-between gap-7">
                 <div className="flex flex-col gap-5 sm:pl-4">
@@ -139,7 +139,7 @@ const ActionsPage = () => {
               </div>
 
               {/* Right panel (widget) sized 600x490 at 724/42 */}
-              <div className="lg:ps-7 lg:border-l border-[#13243617]">
+              <div className="md:ps-7 md:border-l border-[#13243617]">
                 <div className="relative mx-auto h-auto min-h-[21.2494rem] sm:min-h-[23.9056rem] lg:h-[26.0305rem] lg:mx-0 w-full max-w-full bg-[#132436] rounded-[1.0625rem] sm:rounded-[1.275rem] p-3 sm:p-4 md:p-6 flex flex-col items-center gap-3 sm:gap-4 md:gap-[1.5938rem]">
                   {/* Top icon */}
                   <div
