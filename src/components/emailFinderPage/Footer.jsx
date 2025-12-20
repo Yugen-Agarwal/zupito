@@ -11,7 +11,7 @@ const Footer = () => {
         data-animate="fade-up"
         className="relative w-full overflow-hidden bg-transparent"
       >
-        <div className="w-full flex justify-center px-6! py-6! sm:py-6! md:py-6!">
+        <div className="home-container flex justify-center py-6! sm:py-6! md:py-6!">
           <div
             className="relative w-full max-w-full mx-auto rounded-[24px] overflow-hidden bg-no-repeat bg-cover bg-center"
             style={{
@@ -23,16 +23,17 @@ const Footer = () => {
           >
             <div className="w-full flex justify-center px-6 overflow-visible">
               <div
-                className="w-full h-full px-4! sm:px-6! md:px-10! lg:px-14! xl:px-22! 2xl:px-[130px]! py-8 sm:py-10 md:py-12 lg:py-14 flex flex-col lg:flex-row items-center justify-start pb-0!"
+                className="w-full h-full px-4! sm:px-6! md:px-10! lg:px-14! xl:px-22! 2xl:px-[130px]! py-8 sm:py-10 md:py-12 lg:py-14 flex flex-col md:flex-row items-center justify-start pb-0!"
                 style={{ zIndex: 2 }}
               >
-                <div className="w-full lg:flex-1 flex flex-col justify-center">
-                  <div className="w-full flex flex-col gap-6 sm:gap-[30px]">
-                    <div className="flex flex-col gap-8 sm:gap-[40px]">
-                      <div className="flex flex-col gap-4 sm:gap-[16px]">
+                {/* Text Content Section */}
+                <div className="w-full md:flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+                  <div className="w-full flex flex-col gap-6 sm:gap-[30px] items-center md:items-start">
+                    <div className="flex flex-col gap-8 sm:gap-[40px] w-full">
+                      <div className="flex flex-col gap-4 sm:gap-[16px] w-full items-center md:items-start">
                         <h1
                           data-animate-item
-                          className="home-title lg:max-w-[600px] text-white capitalize font-['Inter'] text-[40px]! xl:text-[44px]!"
+                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[32px]! sm:text-[36px]! md:text-[40px]! xl:text-[44px]!"
                         >
                           Sign Up For{" "}
                           <span
@@ -50,7 +51,7 @@ const Footer = () => {
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.08s" }}
-                          className="home-description text-[#546779] font-['Manrope'] text-[14px] lg:text-[16px]"
+                          className="home-description text-[#546779] font-['Manrope'] text-[14px] md:text-[16px] max-w-[500px] md:max-w-none"
                         >
                           Use your free credits for both finding and verifying
                           emails.
@@ -61,11 +62,11 @@ const Footer = () => {
                     <div
                       data-animate-item
                       style={{ transitionDelay: "0.2s" }}
-                      className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 w-full max-w-[800px] pt-4! sm:pt-6! pb-4! sm:pb-6! px-4!"
+                      className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 w-full max-w-[800px] pt-4! sm:pt-6! pb-4! sm:pb-6! px-4! justify-center md:justify-start"
                     >
                       <button
                         data-hover="lift"
-                        className="w-full sm:w-auto h-[50px] sm:h-[54px] font-['Inter'] md:h-[58px] lg:h/[62px] px-6! sm:px-8! md:px-10! rounded-[50px] bg-[#EB3609] hover:bg-[#FF6B35] text-white text-[14px] lg:text-[16px] font-semibold whitespace-nowrap inline-flex items-center justify-center gap-2 sm:gap-3 transition-colors cursor-pointer"
+                        className="w-full sm:w-auto h-[50px] sm:h-[54px] font-['Inter'] md:h-[58px] lg:h-[62px] px-6! sm:px-8! md:px-10! rounded-[50px] bg-[#EB3609] hover:bg-[#FF6B35] text-white text-[14px] md:text-[16px] font-semibold whitespace-nowrap inline-flex items-center justify-center gap-2 sm:gap-3 transition-colors cursor-pointer"
                       >
                         <span>Checkout Details</span>
                         <img
@@ -76,28 +77,33 @@ const Footer = () => {
                       </button>
                       <button
                         data-hover="lift"
-                        className="text-white font-['Manrope'] text-[14px] lg:text-[16px] font-semibold flex items-center gap-2 hover:text-[#EDFF67] transition-colors cursor-pointer"
+                        className="text-white font-['Manrope'] text-[14px] md:text-[16px] font-semibold flex items-center gap-2 hover:text-[#EDFF67] transition-colors cursor-pointer"
                       >
                         <span>Claim 300 free credits</span>
                         <img
                           src="/images/right-arrow.svg"
                           alt="Right arrow icon"
-                          className="w-4 h-4 sm:w-5 sm:h-5 mt-1"
+                          className="w-4 h-4 sm:w-5 sm:h-5 mt-1 shrink-0"
                         />
                       </button>
                     </div>
                   </div>
                 </div>
 
-                <div className="w-full lg:w-auto shrink-0 flex items-center justify-center lg:justify-end">
+                {/* Image Section - Positioned differently below md (768px) */}
+                <div className="w-full md:w-auto shrink-0 flex items-center justify-center md:justify-end mt-0 md:mt-0 relative">
                   <div
-                    className="relative w-full hidden lg:flex items-center justify-center overflow-visible"
-                    style={{ maxWidth: "clamp(200px, 25vw, 350px)" }}
+                    className="relative w-full flex items-center justify-center overflow-visible"
+                    style={{ maxWidth: "clamp(200px, 35vw, 350px)" }}
                   >
                     <img
                       src="/images/footer-image.svg"
                       alt="Promotional"
-                      className="w-full"
+                      className="w-[180px] sm:w-[220px] md:w-full max-w-full relative md:relative"
+                      style={{
+                        position: 'relative',
+                        top: '0',
+                      }}
                     />
                   </div>
                 </div>

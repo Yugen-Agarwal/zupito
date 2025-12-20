@@ -45,31 +45,30 @@ const EmailFinder = () => {
   return (
     <section ref={sectionRef} data-animate="fade-up" className="w-full">
       {/* Container with responsive padding */}
-      <div className="w-full px-6 sm:px-8 md:px-12 lg:px-16 xl:px-24 2xl:px-[150px] py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto">
-          {/* Main content block - responsive container */}
-          <div className="w-full max-w-full  mx-auto">
-            {/* Content wrapper with gap spacing */}
-            <div className="flex flex-col gap-[100px]">
-              {/* Top section with badge and heading */}
+      <div className="home-container py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28">
+        {/* Main content block - responsive container */}
+        <div className="w-full max-w-full  mx-auto">
+          {/* Content wrapper with gap spacing */}
+          <div className="flex flex-col gap-[100px]">
+            {/* Top section with badge and heading */}
             <div className="w-full flex flex-col gap-[21px]">
-                {/* Plugin Integration Badge */}
-                <div className="w-fit">
-                  <div className="inline-flex items-center gap-2 capitalize w-[187px] h-[42px] rounded-[50px] py-3 px-4 bg-[#F6F6F6] font-semibold text-base leading-[18px] tracking-normal align-middle text-[#132436]"
-                    style={{
-                      fontFamily: "Inter, sans-serif",
-                    }}
-                  >
-                    {/* Blue dot icon */}
-                    <span className="inline-block rounded-full w-2 h-2 bg-blue-500 shrink-0" />
-                    <span>Plugin Integration</span>
-                  </div>
+              {/* Plugin Integration Badge */}
+              <div className="w-fit">
+                <div className="inline-flex items-center gap-2 capitalize w-[187px] h-[42px] rounded-[50px] py-3 px-4 bg-[#F6F6F6] font-semibold text-base leading-[18px] tracking-normal align-middle text-[#132436]"
+                  style={{
+                    fontFamily: "Inter, sans-serif",
+                  }}
+                >
+                  {/* Blue dot icon */}
+                  <span className="inline-block rounded-full w-2 h-2 bg-blue-500 shrink-0" />
+                  <span>Plugin Integration</span>
                 </div>
+              </div>
 
-                {/* Heading and Description Section */}
-                <div className="w-full grid-cols-2 lg:items-start gap-[42px] grid ">
-                  {/* Heading Section */}
-                  <div className="w-full lg:w-auto shrink-0">
+              {/* Heading and Description Section */}
+              <div className="w-full grid-cols-2 lg:items-start gap-[42px] grid ">
+                {/* Heading Section */}
+                <div className="w-full lg:w-auto shrink-0">
                   <h2
                     data-animate-item
                     className="home-title text-[#132436] font-['Inter'] flex flex-col gap-3"
@@ -85,10 +84,10 @@ const EmailFinder = () => {
                     </span>
                     <span>Email Finder</span>
                   </h2>
-                  </div>
+                </div>
 
-                  {/* Description Paragraph */}
-                  <div className="w-full lg:flex-1">
+                {/* Description Paragraph */}
+                <div className="w-full lg:flex-1">
                   <p
                     data-animate-item
                     style={{ transitionDelay: "0.08s" }}
@@ -98,11 +97,11 @@ const EmailFinder = () => {
                     matters. Here's why professionals choose us over
                     competitors:
                   </p>
-                  </div>
                 </div>
               </div>
+            </div>
 
-              {/* Feature Cards Grid Section */}
+            {/* Feature Cards Grid Section */}
             <div className="w-full max-w-full mx-auto">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px]">
                 {featureCards.map((card, idx) => (
@@ -130,7 +129,6 @@ const EmailFinder = () => {
                   </div>
                 ))}
               </div>
-            </div>
             </div>
           </div>
         </div>

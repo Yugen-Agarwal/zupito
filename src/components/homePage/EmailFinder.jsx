@@ -81,7 +81,7 @@ const EmailFinder = () => {
                       style={{ transitionDelay: "0.2s" }}
                       className="home-subtitle-emailfinder px-3  text-center font-['Inter'] text-[#132436] capitalize"
                     >
-                      List Building With Reliable <br /> Email Finder
+                      List Building With Reliable Email Finder
                     </h3>
 
                     {/* Cards */}

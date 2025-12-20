@@ -19,8 +19,8 @@ const WinningTeams = () => {
       <div className="home-container flex justify-center py-6">
         <div
           className="w-full max-w-full mx-auto rounded-2xl bg-no-repeat
-           bg-cover bg-center px-5 sm:px-8 md:px-12 lg:px-16 xl:px-20 py-12 sm:py-14 md:py-16
-           bg-[url('/images/footer-plain-bg.png')] xl:bg-[url('/images/winning-teams-bg.png')]
+           bg-cover bg-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-6 py-12 sm:py-14 md:py-16
+            bg-[url('/images/footer-plain-bg.png')] xl:bg-[url('/images/winning-teams-bg.png')]
           "
         >
           {/* Header */}
@@ -46,10 +46,9 @@ const WinningTeams = () => {
                 max-w-4xl
               "
             >
-              <span className="text-white">Winning </span>
-              <span className="text-[#717680]">Teams </span>
-              <span className="text-white">Trust Zupitu </span>
-              <span className="text-[#717680]">to Crush</span>
+              <span className="text-white">Winning Teams Trust Zupitu to </span>
+              <br className="hidden md:block" />
+              <span className="text-white">Crush </span>
               <span className="inline-flex items-center mx-2">
                 <img
                   src="/images/Commitment.svg"
@@ -57,7 +56,7 @@ const WinningTeams = () => {
                   className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10"
                 />
               </span>
-              <span className="text-[#717680]">Their Targets</span>
+              <span className="text-white">Their Targets</span>
             </h2>
 
             <p
@@ -70,41 +69,36 @@ const WinningTeams = () => {
               "
             >
               Zupitu simplifies prospecting with intuitive tools for high-quality
-              data generation, seamless collaboration, and effortless scaling.
+              data generation. It supports seamless team collaboration, easily handles large data volumes.
             </p>
           </div>
 
           {/* Cards */}
           <div
-            className="mt-4 xl:mt-40 grid 
-              grid-cols-1 
-              sm:grid-cols-2 
-              xl:grid-cols-4
-              gap-6 lg:gap-8
-              justify-items-center
-            "
+            className="mt-4 xl:mt-40 grid grid-cols-2 max-[450px]:grid-cols-1 max-w-3xl xl:max-w-[70rem] xl:grid-cols-4 gap-6 justify-items-center mx-auto"
           >
+
             {cards.map((card, idx) => (
               <div
                 key={idx}
                 data-animate-item
                 className="
                   w-full 
-                  max-w-[18rem]
-                  bg-[#FAFBFF]
-                  rounded-xl
+                  h-full
+                  bg-[#1F2F44]
+                  border border-white/10
+                  rounded-2xl
                   px-6 py-8
-                  shadow-md
                   text-center
-                  flex flex-col items-center gap-3
+                  flex flex-col items-center justify-center gap-3
                   transition-transform hover:-translate-y-1
                 "
               >
-                <div className="text-[#132436] font-bold font-['Inter'] text-3xl">
+                <div className="text-[#EDFF67] font-bold font-['Inter'] text-3xl sm:text-4xl">
                   {card.title}
                 </div>
 
-                <p className="text-sm sm:text-base text-[#546779] whitespace-pre-line font-['Manrope']">
+                <p className="text-sm text-white/80 whitespace-pre-line font-['Manrope'] leading-relaxed">
                   {card.desc}
                 </p>
               </div>

@@ -16,8 +16,8 @@ const HeroSection = () => {
       }}
     >
       {/* Container */}
-      <div className="w-full mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-24 2xl:px-[150px]">
-        <div className="max-w-full lg:max-w-[1250px] mx-auto flex flex-col items-center">
+      <div className="home-container">
+        <div className="w-full flex flex-col items-center">
           {/* Headline Section */}
           <div className="w-full flex flex-col items-center gap-5 mb-[12px]">
             <h1
