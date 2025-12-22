@@ -16,7 +16,7 @@ const WinningTeams = () => {
       data-animate="fade-up"
       className="relative w-full bg-transparent"
     >
-      <div className="mx-auto max-w-[1550px] px-4 py-6 flex justify-center">
+      <div className="mx-auto max-w-[1800px] px-4 py-6 flex justify-center">
         <div
           className="w-full max-w-full mx-auto rounded-2xl bg-no-repeat
            bg-cover bg-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-6 py-12 sm:py-14 md:py-16

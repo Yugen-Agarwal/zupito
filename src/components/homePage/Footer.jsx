@@ -11,7 +11,7 @@ const Footer = () => {
         data-animate="fade-up"
         className="relative w-full overflow-hidden bg-transparent"
       >
-        <div className="mx-auto max-w-[1550px] px-4 flex justify-center py-6! sm:py-6! md:py-6!">
+        <div className="mx-auto max-w-[1800px] px-4 flex justify-center py-6! sm:py-6! md:py-6!">
           <div
             className="relative w-full max-w-full mx-auto rounded-[24px] overflow-hidden bg-no-repeat bg-cover bg-center"
             style={{
