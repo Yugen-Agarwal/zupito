@@ -133,7 +133,7 @@ const FAQsPage = () => {
                     className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-[26.5617rem] opacity-100' : 'max-h-0 opacity-0'
                       }`}
                   >
-                    <div className="px-6 lg:px-[2.1249rem] pb-8 lg:pb-12">
+                    <div className="px-6 lg:px-[2.1249rem] pb-8">
                       <p className="text-[0.9375rem] sm:text-[1rem] font-normal text-[#747C9A] font-['Manrope'] max-w-full leading-relaxed">
                         {faq.answer}
                       </p>
