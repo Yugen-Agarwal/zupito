@@ -3,67 +3,67 @@ import useScrollReveal from "../../hooks/useScrollReveal";
 
 const EmailFinder = () => {
   const sectionRef = useScrollReveal();
+
   return (
     <section
       ref={sectionRef}
       data-animate="fade-up"
       className="relative w-full bg-white overflow-hidden"
     >
-      {/* Outer container - follow ActionsPage spacing rhythm */}
       <div className="home-container pb-10 lg:pb-16">
         <div className="w-full h-auto mx-auto">
-          {/* First image: overall card container */}
-          <div className="relative w-full bg-white  overflow-hidden">
+
+          <div className="relative w-full bg-white overflow-hidden">
+
             {/* Two column responsive layout */}
-            <div className="flex flex flex-col md:flex-row items-stretch gap-6 md:gap-5 lg:gap-5">
-              {/* LEFT: second + fourth + fifth images combined */}
-              <div className="col-span-3 mb-4 md:mb-0">
-                <div className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem]" data-animate-item>
-                  {/* Second image area (feature chips panel) */}
-                  <div className="relative w-full bg-[#F5F5F5] rounded-t-[1.275rem] pt-10 sm:pt-10 md:pt-[2.1249rem] px-4 sm:px-6 pb-6">
-                    {/* Use provided image as-is (no manual chips) */}
+            <div className="flex flex-col md:flex-row items-stretch gap-6 md:gap-5 lg:gap-5">
+
+              {/* ================= LEFT (WIDER) ================= */}
+              <div className="w-full md:basis-[65%] md:flex-grow">
+                <div
+                  className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem] h-full"
+                  data-animate-item
+                >
+                  {/* Top image */}
+                  <div className="relative w-full bg-[#F5F5F5] rounded-t-[1.275rem] pt-10 md:pt-[2.1249rem] px-4 sm:px-6 pb-6">
                     <div className="w-full flex items-center justify-center">
                       <img
                         src="/images/container-v.svg"
                         alt="CRM features"
-                        className="w-full h-auto min-w-0 sm:min-w-[15.937rem] md:min-w-[21.2494rem] min-h-[10.6247rem] sm:min-h-[12.7496rem] md:min-h-[14.2371rem] object-contain rounded-[0.6375rem] sm:rounded-[0.85rem]"
+                        className="w-full h-auto object-contain rounded-[0.85rem]"
                       />
                     </div>
                   </div>
 
-                  {/* Fourth image (bottom description panel) */}
-                  <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 px-7 h-full">
+                  {/* Bottom description */}
+                  <div className="w-full bg-[#FCFCFD] rounded-b-[1.275rem] py-4 px-7 flex-1">
                     <div className="max-w-[39.8426rem] gap-7 mx-auto flex flex-col justify-between h-full">
-                      {/* Fifth image text */}
-                      <div>
-                        <p className="home-description-emailfinder text-[#546779] font-['Manrope']">
-                          Beyond Opt-In mail list, email finder is a one of the
-                          most reliable sources of building a deliverable list.
-                          Zupitu helps you uncover the most accurate.
-                        </p>
-                      </div>
-                      <div>
-                        <button
-                          data-hover="lift"
-                          className="inline-flex font-['Manrope'] items-center gap-3 text-[#EB3609] font-bold text-[0.85rem] sm:text-[0.9563rem] md:text-[1.0625rem] lg:text-[1.1688rem] leading-[1.3] sm:leading-[1.35] md:leading-[1.4] lg:leading-[1.36] capitalize cursor-pointer"
-                        >
-                          <span>Explore Email Finder</span>
-                          <img
-                            src="/images/right-orange-arrow.svg"
-                            alt="Right arrow icon"
-                            className="w-4 h-3"
-                          />
-                        </button>
-                      </div>
+                      <p className="home-description-emailfinder text-[#546779] font-['Manrope']">
+                        Beyond Opt-In mail list, email finder is a one of the
+                        most reliable sources of building a deliverable list.
+                        Zupitu helps you uncover the most accurate.
+                      </p>
+
+                      <button
+                        data-hover="lift"
+                        className="inline-flex font-['Manrope'] items-center gap-3 text-[#EB3609] font-bold text-[0.85rem] sm:text-[0.9563rem] md:text-[1.0625rem] lg:text-[1.1688rem] capitalize cursor-pointer"
+                      >
+                        <span>Explore Email Finder</span>
+                        <img
+                          src="/images/right-orange-arrow.svg"
+                          alt=""
+                          className="w-4 h-3"
+                        />
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* RIGHT: sixth image background with list */}
-              <div className="col-span-2 w-full">
+              {/* ================= RIGHT (NARROWER) ================= */}
+              <div className="w-full md:basis-[35%] md:flex-grow-0">
                 <div
-                  className="relative  min-h-auto lg:min-h-auto p-4 sm:p-5 md:p-6 rounded-[1.275rem] border-[#EEF0F3] border-solid border"
+                  className="relative p-4 sm:p-5 md:p-6 rounded-[1.275rem] border-[#EEF0F3] border-solid border h-full"
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
                 >
@@ -74,54 +74,47 @@ const EmailFinder = () => {
                     className="pointer-events-none select-none absolute inset-0 w-full h-full object-cover rounded-[1.275rem]"
                   />
 
-                  <div className="relative z-[1] w-full h-full flex flex-col items-center gap-5 sm:gap-6 md:gap-6 p-3 sm:p-4">
-                    {/* Title */}
+                  <div className="relative z-[1] w-full h-full flex flex-col items-center gap-5 p-3 sm:p-4">
                     <h3
                       data-animate-item
                       style={{ transitionDelay: "0.2s" }}
-                      className="home-subtitle-emailfinder px-3  text-center font-['Inter'] text-[#132436] capitalize"
+                      className=" text-center font-['Inter'] text-[#132436] capitalize text-[24px]!"
                     >
                       List Building With Reliable Email Finder
                     </h3>
 
-                    {/* Cards */}
-                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
+                    <div className="w-full max-w-[37.1864rem] mx-auto flex flex-col items-center gap-2">
                       {[
                         "Check domain status",
                         "Verified business emails",
+                        "New point",
                         "Upload lists without template restriction",
                         "Find complex emails",
                       ].map((label, idx) => (
                         <div
                           key={label}
                           data-animate-item
-                          style={{
-                            transitionDelay: `${0.15 + idx * 0.08}s`,
-                          }}
-                          className="w-full h-[3.0812rem] md:h-[3.2937rem] bg-white rounded-[0.5313rem] shadow-[0_0.5rem_1.25rem_0_#00000012] py-[0.5313rem] px-3 flex items-center gap-4 cursor-pointer"
+                          style={{ transitionDelay: `${0.15 + idx * 0.08}s` }}
+                          className="w-full h-[3.0812rem] bg-white rounded-[0.5313rem] shadow-[0_0.5rem_1.25rem_0_#00000012] px-3 flex items-center gap-4"
                         >
                           <span className="inline-flex items-center justify-center min-w-[2.0187rem] min-h-[2.0187rem] rounded-[0.5313rem] bg-[#F6F6F7]">
                             <img
                               src="/images/Bullet.svg"
                               alt=""
-                              className="w-5 h-4 md:w-6 md:h-5 object-contain"
+                              className="w-5 h-4 object-contain"
                             />
                           </span>
-                          <span
-                            className="home-description-emailfinder-bottom  text-[#3A4A5A] font-['Manrope'] email-finder-label"
-                            style={{
-                              animationDelay: `${0.28 + idx * 0.18}s`,
-                              animationDuration: "0.9s",
-                            }}
-                          >
+                          <span className="home-description-emailfinder-bottom text-[#3A4A5A] font-['Manrope']">
                             {label}
                           </span>
                         </div>
                       ))}
                     </div>
                   </div>
+
                 </div>
               </div>
+
             </div>
           </div>
         </div>
