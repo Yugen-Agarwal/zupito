@@ -92,7 +92,7 @@ const EmailPrecision = () => {
               <p
                 data-animate-item
                 style={{ transitionDelay: "0.25s" }}
-                className="home-description-emailprecision pt-4 text-[18px] text-[#546779] font-['Manrope'] mx-auto lg:mx-0 max-w-[550px]"
+                className="home-description pt-4 text-[18px] text-[#546779] font-['Manrope'] mx-auto lg:mx-0 max-w-[550px]"
               >
                 Your email marketing success depends upon valid and opt-in email
                 database.<br />
