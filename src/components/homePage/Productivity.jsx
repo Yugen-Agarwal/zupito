@@ -88,7 +88,7 @@ const Productivity = () => {
                 </div>
 
                 {/* Bottom content block (sixth image) */}
-                <div className="px-5 sm:px-9 lg:px-9 bg-white/0 rounded-b-[1.275rem]">
+                <div className="px-5 sm:px-9 lg:px-9 bg-white/0 rounded-b-[1.275rem] 2xl:mb-4">
                   <div className="flex flex-col gap-1 items-center lg:items-start">
                     <div
                       data-animate-item
