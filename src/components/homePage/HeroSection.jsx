@@ -42,7 +42,7 @@ function HeroSection() {
                 [@media(min-width:64rem)_and_(max-width:79.9375rem)]:min-h-[calc(100vh-7.5rem)] "
             >
               {/* Copy */}
-              <div className="max-w-full sm:full xl:max-w-[600px] 2xl:max-w-[650px] flex flex-col items-center  lg:items-start pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
+              <div className="max-w-full w-full xl:max-w-[600px] 2xl:max-w-[650px] flex flex-col items-center md:items-start pt-4 sm:pt-8 md:pt-10 lg:pt-18 xl:pt-24">
                 <div className="w-full">
                   <h1
                     data-animate-item
@@ -101,13 +101,13 @@ function HeroSection() {
 
                   <button
                     data-hover="lift"
-                    className="text-[#3A4A5A] whitespace-nowrap font-['Manrope'] font-semibold flex items-center gap-2 hover:text-[#EB3609] transition-colors text-[0.7438rem] sm:text-[0.7968rem] lg:text-[0.85rem] cursor-pointer"
+                    className="text-[#3A4A5A] whitespace-nowrap font-['Manrope'] font-semibold flex items-center gap-2 hover:text-[#EB3609] transition-colors text-[0.7438rem] sm:text-[0.7968rem] lg:text-[0.85rem] cursor-pointer h-[2.5499rem] sm:h-[2.6562rem] lg:h-[2.7624rem]"
                   >
-                    <span>Claim 300 free credits</span>
+                    Claim 300 free credits
                     <img
                       src="/images/right-arrow.svg"
                       alt="Right arrow icon"
-                      className="w-5 h-5"
+                      className="w-4 h-4 sm:w-5 sm:h-5 "
                       style={{
                         filter:
                           "invert(29%) sepia(8%) saturate(576%) hue-rotate(178deg) brightness(10%) contrast(87%)",

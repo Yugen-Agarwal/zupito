@@ -117,7 +117,7 @@ const Productivity = () => {
                         <span>Success</span>
                       </h3>
 
-                      <div className="flex flex-col gap-2 text-center lg:text-left">
+                      <div className="flex flex-col gap-2 text-center lg:text-left mb-8 lg:mb-0">
                         <p
                           data-animate-item
                           style={{ transitionDelay: "0.18s" }}
