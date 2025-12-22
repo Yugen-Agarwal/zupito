@@ -121,7 +121,7 @@ const ActionsPage = () => {
                 </div>
 
                 {/* RIGHT PANEL */}
-                <div className="md:border-l md:pl-7 border-[#13243617]">
+                <div className="md:border-l md:pl-7 border-[#13243617] h-full">
                   <div className="bg-[#132436] rounded-xl p-4 md:p-6 flex flex-col items-center gap-5 text-center">
                     <div className="w-14 h-14 rounded-full bg-white flex items-center justify-center">
                       <img
