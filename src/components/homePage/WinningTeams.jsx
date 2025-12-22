@@ -19,7 +19,7 @@ const WinningTeams = () => {
       <div className="mx-auto max-w-[1800px] px-4 py-6 flex justify-center">
         <div
           className="w-full max-w-full mx-auto rounded-2xl bg-no-repeat
-           bg-cover bg-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-6 py-12 sm:py-14 md:py-16
+           bg-cover bg-center px-4 sm:px-6 md:px-8 lg:px-10 xl:px-4 2xl:px-2 py-12 sm:py-14 md:py-16
             bg-[url('/images/footer-plain-bg.png')] xl:bg-[url('/images/winning-teams-bg.png')]
           "
         >
@@ -75,7 +75,7 @@ const WinningTeams = () => {
 
           {/* Cards */}
           <div
-            className="mt-4 xl:mt-40 grid grid-cols-2 max-[450px]:grid-cols-1 max-w-3xl xl:max-w-[70rem] xl:grid-cols-4 gap-6 justify-items-center mx-auto"
+            className="mt-4 xl:mt-40 grid grid-cols-2 max-[450px]:grid-cols-1 w-full max-w-[95%] sm:max-w-[92%] md:max-w-[90%] lg:max-w-[88%] xl:max-w-[85%] 2xl:max-w-[82%] xl:grid-cols-4 gap-6 mx-auto justify-items-stretch"
           >
 
             {cards.map((card, idx) => (
@@ -84,6 +84,7 @@ const WinningTeams = () => {
                 data-animate-item
                 className="
                   w-full 
+                  min-w-0
                   h-full
                   bg-[#1F2F44]
                   border border-white/10
