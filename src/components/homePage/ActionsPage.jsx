@@ -1,9 +1,8 @@
 import IconVerify from "../../assets/IconVerify";
 import useScrollReveal from "../../hooks/useScrollReveal";
 
-const ActionsPage = () => {
+const ActionsPage = ({isPopupOpen , setIsPopupOpen}) => {
   const sectionRef = useScrollReveal();
-
   return (
     <section
       ref={sectionRef}
@@ -155,6 +154,7 @@ const ActionsPage = () => {
                         className="flex-1 px-4 py-4 text-sm outline-none"
                       />
                       <button
+                      onClick={()=>setIsPopupOpen(true)}
                         className="bg-[#EB3609] hover:bg-[#FF6B35] text-white font-semibold px-4 py-2.5 rounded-full mr-1 transition-colors flex items-center justify-center gap-2"
                       >
                         <span className="hidden [@media(min-width:900px)]:block">
@@ -163,7 +163,7 @@ const ActionsPage = () => {
                         <IconVerify className="block [@media(min-width:900px)]:hidden w-5 h-5" />
                       </button>
                     </div>
-
+                      
                   </div>
                 </div>
 
