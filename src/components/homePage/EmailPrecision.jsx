@@ -81,7 +81,7 @@ const EmailPrecision = () => {
                   <img
                     src="/images/rocket-purple.svg"
                     alt=""
-                    className="h-[3em] w-auto object-contain flex-shrink-0"
+                    className="h-[3em] w-auto object-contain flex-shrink-0 ml-1"
                   />
                 </div>
               </div>

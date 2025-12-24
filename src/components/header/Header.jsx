@@ -43,7 +43,7 @@ function Header() {
 
   return (
     <header
-      className="relative w-full h-14 sm:h-16 md:h-[70px] lg:h-20 bg-white/80 border-b border-black"
+      className="relative w-full h-14 sm:h-16 md:h-[70px] lg:h-20 bg-white/80 border-b border-gray-200"
       style={{ zIndex: 60 }}
     >
       {/* Container with responsive padding */}
