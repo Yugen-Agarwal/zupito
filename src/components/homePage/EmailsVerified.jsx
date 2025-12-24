@@ -12,7 +12,7 @@ const EmailsVerified = () => {
     >
       <div className="home-container py-3 lg:py-4 pt-0!">
         <div className="w-full mx-auto relative">
-          <div className="w-full mx-auto flex flex-col md:flex-row gap-3 md:gap-4">
+          <div className="w-full mx-auto flex flex-col md:flex-row gap-2 md:gap-3">
 
             {/* Left column */}
             <div

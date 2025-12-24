@@ -16,7 +16,7 @@ const EmailFinder = () => {
           <div className="relative w-full bg-white overflow-hidden">
 
             {/* Two column responsive layout */}
-            <div className="md:grid md:grid-cols-1 lg:grid-cols-5 items-stretch gap-3 md:gap-4 ">
+            <div className="md:grid md:grid-cols-1 lg:grid-cols-5 items-stretch gap-2 md:gap-3 ">
               {/* LEFT: second + fourth + fifth images combined */}
               <div className="col-span-3 mb-4 md:mb-0 flex">
                 <div className="flex flex-col border-[#EEF0F3] border-solid border rounded-[1.275rem] w-full h-full" data-animate-item>

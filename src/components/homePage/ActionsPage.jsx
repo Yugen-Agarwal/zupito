@@ -44,7 +44,7 @@ const ActionsPage = () => {
             <p
               data-animate-item
               style={{ transitionDelay: "0.15s" }}
-              className="home-description-actionpage mt-5 max-w-[72rem] mx-auto text-[#546779]"
+              className="home-description-actionpage mt-5 max-w-[60rem] mx-auto text-[#546779]"
             >
               Experience the quality and speed of AI-powered email verification
               and email finding. Try Zupitu without sign-up. Enjoy free trials
