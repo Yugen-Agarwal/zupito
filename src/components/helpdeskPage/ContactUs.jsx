@@ -26,7 +26,7 @@ const ContactUs = () => {
       {/* Main Container */}
       <div className="w-full max-w-full lg:max-w-[1362px] mx-auto  px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[80px] sm:py-[100px]">
         {/* Header Section - First Image */}
-        <div className="w-full flex flex-col items-center gap-[10px] mb-12 sm:mb-16 md:mb-20 max-w-[708px] mx-auto">
+        <div className="w-full flex flex-col items-center gap-[10px] mb-8 sm:mb-10 md:mb-14 max-w-[708px] mx-auto">
           {/* Contact Us Title with Icon */}
           <h1 className="flex items-center justify-center gap-2 sm:gap-3 text-center font-['Inter'] text-[clamp(40px,5vw,48px)] font-bold leading-[70px] tracking-[-3.2px] text-[#132436] capitalize">
             <span>Contact</span>
@@ -104,7 +104,7 @@ const ContactUs = () => {
               <div className="w-full flex justify-end">
                 <button
                   type="submit"
-                  className="w-full sm:w-[170px] h-[70px] rounded-[50px] px-[24px] py-[16px] bg-[#EB3609] hover:bg-[#D32F08] active:bg-[#C22907] transition-colors duration-300 shadow-[0px_4px_16px_0px_rgba(235,54,9,0.3)] hover:shadow-[0px_6px_20px_0px_rgba(235,54,9,0.4)] flex items-center justify-center gap-[13px]"
+                  className="w-full sm:w-[170px] h-[70px] rounded-[50px] px-[18px] py-[12px] bg-[#EB3609] hover:bg-[#D32F08] active:bg-[#C22907] transition-colors flex items-center justify-center gap-[13px]"
                 >
                   <span className="font-['Inter'] text-[16px] font-semibold leading-[100%] tracking-normal text-center text-white">
                     Submit Request
