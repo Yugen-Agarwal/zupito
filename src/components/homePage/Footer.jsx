@@ -13,7 +13,7 @@ const Footer = () => {
       >
         <div className="mx-auto max-w-[1800px] px-4 flex justify-center">
           <div
-            className="relative w-full max-w-full mx-auto rounded-[24px] overflow-hidden bg-no-repeat bg-cover bg-center"
+            className="relative w-full max-w-full mx-auto rounded-[24px] overflow-hidden bg-no-repeat bg-cover bg-center mb-2"
             style={{
               backgroundImage: "url('/images/email-finder-footer-bg-img.png')",
               backgroundSize: "cover",

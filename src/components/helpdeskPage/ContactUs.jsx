@@ -26,12 +26,12 @@ const ContactUs = () => {
       {/* Main Container */}
       <div className="w-full max-w-full lg:max-w-[1362px] mx-auto  px-4 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[80px] sm:py-[100px]">
         {/* Header Section - First Image */}
-        <div className="w-full flex flex-col items-center gap-[26px] mb-12 sm:mb-16 md:mb-20">
+        <div className="w-full flex flex-col items-center gap-[10px] mb-12 sm:mb-16 md:mb-20 max-w-[708px] mx-auto">
           {/* Contact Us Title with Icon */}
-          <h1 className="flex items-center justify-center gap-3 sm:gap-4 text-center font-['Inter'] text-[clamp(40px,5vw,74px)] font-bold leading-[70px] tracking-[-3.2px] text-[#132436] capitalize">
+          <h1 className="flex items-center justify-center gap-2 sm:gap-3 text-center font-['Inter'] text-[clamp(40px,5vw,48px)] font-bold leading-[70px] tracking-[-3.2px] text-[#132436] capitalize">
             <span>Contact</span>
             {/* Headset Icon - Purple Circle with White Headset and Speech Bubble */}
-            <span className="inline-flex items-center justify-center w-[clamp(50px,6vw,80px)] h-[clamp(50px,6vw,80px)] shrink-0">
+            <span className="inline-flex items-center justify-center w-[clamp(50px,6vw,80px)] h-[clamp(50px,6vw,48px)] shrink-0">
               <img 
                 src="/images/contact-us-icon.svg" 
                 alt="Contact Us Icon" 
@@ -42,13 +42,13 @@ const ContactUs = () => {
           </h1>
 
           {/* Description Text */}
-          <p className="max-w-full text-center font-['Manrope'] text-[clamp(18px,2.5vw,26px)] font-medium leading-[40px] tracking-normal text-[#62768B]">
+          <p className="max-w-full text-center font-['Manrope'] text-[clamp(18px,2.5vw,20px)] font-medium leading-[40px] tracking-normal text-[#62768B]">
             Get in touch and let us know how we can help. Fill out the form and we'll be in touch as soon as possible.
           </p>
         </div>
 
         {/* Form Container - Second Image */}
-        <div className="w-full max-w-full lg:max-w-[1362px] mx-auto">
+        <div className="w-full max-w-full lg:max-w-[1140px] mx-auto">
           <div
             className="w-full  p-6 sm:p-8 md:p-10 lg:p-[50px]"
             style={{
@@ -57,7 +57,7 @@ const ContactUs = () => {
             }}
           >
             {/* Form Content Container - Third Image */}
-            <form onSubmit={handleSubmit} className="w-full max-w-full mx-auto flex flex-col gap-[40px]">
+            <form onSubmit={handleSubmit} className="w-full max-w-[1021px] mx-auto flex flex-col gap-[40px]">
               {/* Input Fields Row - Fourth Image */}
               <div className="w-full flex flex-col sm:flex-row gap-[24px]">
                 {/* Full Name Input - Sixth Image */}
@@ -104,9 +104,9 @@ const ContactUs = () => {
               <div className="w-full flex justify-end">
                 <button
                   type="submit"
-                  className="w-full sm:w-[217px] h-[80px] rounded-[50px] px-[24px] py-[16px] bg-[#EB3609] hover:bg-[#D32F08] active:bg-[#C22907] transition-colors duration-300 shadow-[0px_4px_16px_0px_rgba(235,54,9,0.3)] hover:shadow-[0px_6px_20px_0px_rgba(235,54,9,0.4)] flex items-center justify-center gap-[13px]"
+                  className="w-full sm:w-[170px] h-[70px] rounded-[50px] px-[24px] py-[16px] bg-[#EB3609] hover:bg-[#D32F08] active:bg-[#C22907] transition-colors duration-300 shadow-[0px_4px_16px_0px_rgba(235,54,9,0.3)] hover:shadow-[0px_6px_20px_0px_rgba(235,54,9,0.4)] flex items-center justify-center gap-[13px]"
                 >
-                  <span className="font-['Inter'] text-[20px] font-semibold leading-[100%] tracking-normal text-center text-white">
+                  <span className="font-['Inter'] text-[16px] font-semibold leading-[100%] tracking-normal text-center text-white">
                     Submit Request
                   </span>
                 </button>

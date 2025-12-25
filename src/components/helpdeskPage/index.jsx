@@ -1,9 +1,8 @@
 import React from 'react'
-import FAQsPage from './FAQsPage'
-import Footer from './Footer'
 import ContactUs from './ContactUs'
 import HeroSection from './HeroSection'
 import DocumentationPage from './DocumentationPage'
+import Footer from '../homePage/Footer'
 
 const HelpDeskPage = () => {
   return (
@@ -11,7 +10,6 @@ const HelpDeskPage = () => {
       <HeroSection />
       <ContactUs />
       <DocumentationPage />
-      <FAQsPage />
       <Footer />
     </div>
   )
