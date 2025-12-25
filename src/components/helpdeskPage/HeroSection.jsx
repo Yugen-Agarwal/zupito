@@ -107,7 +107,7 @@ const HeroSection = () => {
                   />
                   <a
                     href="mailto:support@zupitu.com"
-                    className="relative z-10 font-['Manrope'] text-[16px] sm:text-[18px] xl:text-[20px] font-bold text-black"
+                    className="relative z-10 font-['Manrope'] text-[16px] sm:text-[18px] font-bold text-black"
                   >
                     support@zupitu.com
                   </a>
@@ -142,7 +142,7 @@ const HeroSection = () => {
                   />
                   <a
                     href="mailto:success@zupitu.com"
-                    className="relative z-10 font-['Manrope'] text-[16px] sm:text-[18px] xl:text-[20px] font-bold text-[#132436]"
+                    className="relative z-10 font-['Manrope'] text-[16px] sm:text-[18px] font-bold text-[#132436]"
                   >
                     success@zupitu.com
                   </a>

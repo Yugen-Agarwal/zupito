@@ -28,7 +28,7 @@ const ContactUs = () => {
         {/* Header Section - First Image */}
         <div className="w-full flex flex-col items-center gap-[10px] mb-8 sm:mb-10 md:mb-14 max-w-[708px] mx-auto">
           {/* Contact Us Title with Icon */}
-          <h1 className="flex items-center justify-center gap-2 sm:gap-3 text-center font-['Inter'] text-[clamp(40px,5vw,48px)] font-bold leading-[70px] tracking-[-3.2px] text-[#132436] capitalize">
+          <h1 className="flex items-center justify-center gap-2 sm:gap-3 text-center font-['Inter'] text-[clamp(40px,5vw,44px)] font-bold leading-[70px] tracking-[-3.2px] text-[#132436] capitalize">
             <span>Contact</span>
             {/* Headset Icon - Purple Circle with White Headset and Speech Bubble */}
             <span className="inline-flex items-center justify-center w-[clamp(50px,6vw,80px)] h-[clamp(50px,6vw,48px)] shrink-0">
