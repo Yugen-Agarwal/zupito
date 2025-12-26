@@ -110,7 +110,7 @@ const FAQsPage = () => {
                 <p
                   data-animate-item
                   style={{ transitionDelay: "0.15s" }}
-                  className="home-description mb-3 sm:mb-4 lg:mb-[2.1249rem] text-center lg:text-left text-[#546779]"
+                  className="home-description mb-3 sm:mb-4 lg:mb-[2.1249rem] text-center lg:text-left text-[#546779] font-normal!"
                 >
                   If you're new or looking for answers to your questions, this guide will help you learn more about our services and their features.
                 </p>
