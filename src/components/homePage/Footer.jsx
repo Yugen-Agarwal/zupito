@@ -117,7 +117,7 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4 px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32!">
               <div className="w-full max-w-full mx-auto mt-6! md:mt-8! lg:mt-12! flex flex-col lg:flex-row gap-4">
-                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-3! md:py-5! px-8! flex flex-col gap-3! md:gap-5!">
+                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-5! md:py-5! px-8! flex flex-col gap-3! md:gap-5!">
                   <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
                     <img src="/images/footer-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
                   </div>
@@ -135,7 +135,7 @@ const Footer = () => {
                   ].map((s) => (
                     <div
                       key={s.label}
-                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-4 p-4 sm:p-6 cursor-pointer"
+                      className="rounded-[16px] bg-[#1C2D3E] flex flex-col items-center justify-center gap-2 md:gap-4 p-4 sm:p-6 cursor-pointer"
                     >
                       <div className="w-[37.5px] h-[37.5px] rounded-full flex items-center justify-center">
                         <img
