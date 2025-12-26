@@ -4,7 +4,7 @@ import LeadGeneration from './LeadGeneration'
 import SalesProspecting from './SalesProspecting'
 import PromotionalCampaigns from './PromotionalCampaigns'
 import CRMManagement from './CRMManagement'
-import Footer from './Footer'
+import Footer from '../homePage/Footer'
 
 const UseCasesPage = () => {
   return (

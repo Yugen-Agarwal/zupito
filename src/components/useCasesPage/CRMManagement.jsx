@@ -9,11 +9,11 @@ const CRMManagement = () => {
 
   return (
     <section className="relative w-full flex items-center justify-center overflow-hidden">
-      <div className="w-full max-w-full lg:max-w-[1362px] mx-auto px-0 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[70px]">
-        <div className="relative w-full max-w-full lg:max-w-[1362px] mx-auto rounded-[24px]">
-          <div className="w-full max-w-full lg:max-w-[1362px] mx-auto  flex flex-col gap-[50px] px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="home-container mx-auto px-0 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[70px]">
+        <div className="relative w-fullmx-auto rounded-[24px]">
+          <div className="w-full  mx-auto  flex flex-col gap-[50px]">
             <div
-              className="w-full max-w-full lg:max-w-[1362px] mx-auto h-[95px] flex items-center justify-center rounded-[16px] relative"
+              className="w-full  mx-auto h-[95px] flex items-center justify-center rounded-[16px] relative"
               style={{
                 background:
                   "linear-gradient(90deg, rgba(241, 244, 247, 0.5) 0%, rgba(221, 238, 255, 0.5) 100%)",
@@ -44,15 +44,15 @@ const CRMManagement = () => {
                     >
                       <span>Keep your database </span>
                       <div className="inline-flex items-center justify-center">
-                      <span> clean & </span>
-                      <span className="inline-flex items-center justify-center w-[38px] h-[38px] shrink-0 mx-2">
-                        <img
-                          src="/images/setting-orange-6.svg"
-                          alt="Check icon"
-                          className="w-full h-full object-contain"
-                        />
-                      </span>
-                      <span>actionable</span>
+                        <span> clean & </span>
+                        <span className="inline-flex items-center justify-center w-[38px] h-[38px] shrink-0 mx-2">
+                          <img
+                            src="/images/setting-orange-6.svg"
+                            alt="Check icon"
+                            className="w-full h-full object-contain"
+                          />
+                        </span>
+                        <span>actionable</span>
                       </div>
                     </h2>
                   </div>

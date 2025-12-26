@@ -8,9 +8,9 @@ const PromotionalCampaigns = () => {
         background: "linear-gradient(180deg, #F4FFF8 0%, #F8F7FF 100%)",
       }}
     >
-      <div className="w-full max-w-full lg:max-w-[1362px] mx-auto px-0 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[70px]">
-        <div className="relative w-full max-w-full lg:max-w-[1362px] mx-auto rounded-[24px]">
-          <div className="w-full  flex flex-col gap-[50px] px-4 sm:px-6 md:px-8 lg:px-12">
+      <div className="home-container mx-auto px-0 sm:px-6 md:px-8 lg:px-12 xl:px-[100px] 2xl:px-[150px] py-[70px]">
+        <div className="relative home-container mx-auto rounded-[24px]">
+          <div className="w-full flex flex-col gap-[50px]">
             <div
               className="w-full h-[95px] flex items-center justify-center rounded-[16px] relative"
               style={{

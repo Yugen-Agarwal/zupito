@@ -19,7 +19,7 @@ const Footer = () => {
       `}</style>
       <section className="relative w-full overflow-hidden bg-transparent">
         {/* Outer layout container (mobile 24px padding) */}
-        <div className="w-full flex justify-center sm:px-6 sm:py-6 md:py-6">
+        <div className="home-container flex justify-center sm:px-6 sm:py-6 md:py-6">
           {/* Background box with required properties */}
           <div
             className="relative w-full max-w-full mx-auto rounded-[24px] overflow-hidden bg-no-repeat bg-cover bg-center opacity-100"
