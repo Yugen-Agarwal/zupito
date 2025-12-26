@@ -33,7 +33,7 @@ const Footer = () => {
                       <div className="flex flex-col gap-4 sm:gap-[16px] w-full items-center md:items-start">
                         <h1
                           data-animate-item
-                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[32px]! sm:text-[36px]! md:text-[40px]! xl:text-[44px]!"
+                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[32px]! sm:text-[36px]! md:text-[40px]! xl:text-[44px]! leading-16!"
                         >
                           Sign Up For{" "}
                           <span
@@ -62,7 +62,7 @@ const Footer = () => {
                     <div
                       data-animate-item
                       style={{ transitionDelay: "0.2s" }}
-                      className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 w-full max-w-[800px] pt-4! sm:pt-6! pb-4! sm:pb-6! px-4! justify-center md:justify-start"
+                      className="flex flex-col sm:flex-row items-center gap-3 sm:gap-4 md:gap-6 w-full max-w-[800px] justify-center md:justify-start"
                     >
                       <button
                         data-hover="lift"
@@ -119,7 +119,7 @@ const Footer = () => {
               <div className="w-full max-w-full mx-auto mt-6! md:mt-8! lg:mt-12! flex flex-col lg:flex-row gap-4">
                 <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-3! md:py-5! px-8! flex flex-col gap-5! md:gap-7!">
                   <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
-                    Zupitu
+              <img src="/images/footer-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
                   </div>
                   <p className="text-[#546779] text-[15px] sm:text-[18px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
                     From dynamic visuals to interactive features, our software

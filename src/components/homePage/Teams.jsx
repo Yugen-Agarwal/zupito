@@ -98,7 +98,7 @@ const Teams = () => {
                 data-hover="lift"
                 className="bg-white rounded-[0.6375rem] sm:rounded-[0.7438rem] lg:rounded-[0.85rem] shadow-[0_0.4375rem_1rem_0_#181D2717] px-4 sm:px-5 pt-6 sm:pt-7 lg:pt-8 pb-8 sm:pb-9 lg:pb-10 min-h-[11.6872rem] sm:min-h-[12.7496rem] lg:min-h-[13.8121rem] flex flex-col gap-3 sm:gap-4 lg:gap-[0.85rem] cursor-pointer"
               >
-                <div className="w-[2.5499rem] h-[2.5499rem] sm:w-[2.7624rem] sm:h-[2.7624rem] lg:w-[2.9749rem] lg:h-[2.9749rem] rounded-full bg-[#FAFAFF] flex items-center justify-center">
+                <div className="w-[2.5499rem] h-[2.5499rem] sm:w-[2.7624rem] sm:h-[2.7624rem] lg:w-[3rem] lg:h-[3rem] rounded-full bg-[#FAFAFF] flex items-center justify-center">
                   <img
                     src={
                       idx === 0
