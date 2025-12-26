@@ -18,7 +18,7 @@ const FinderWorks = () => {
         <div className="w-full mb-[21px]">
           <h2
             data-animate-item
-            className="home-title text-center text-[#132436] font-['Inter'] flex items-center justify-center gap-3 flex-wrap"
+            className="text-[44px] text-center text-[#132436] font-['Inter'] flex items-center justify-center gap-3 flex-wrap"
           >
             <span>How Our</span>
             {/* Purple envelope icon */}
@@ -36,7 +36,7 @@ const FinderWorks = () => {
           <p
             data-animate-item
             style={{ transitionDelay: '0.1s' }}
-            className="home-description text-center text-[#546779] font-['Manrope'] max-w-[1200px] mx-auto text-[18px]"
+            className="home-description text-center text-[#546779] font-['Manrope'] max-w-[850px] mx-auto text-[18px]"
           >
             Most companies follow unique email patterns. Our tool detects these formats automatically, helping you uncover accurate contact details, even for large organizations.
           </p>

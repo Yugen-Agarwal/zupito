@@ -22,7 +22,7 @@ const HeroSection = () => {
           <div className="w-full flex flex-col items-center gap-5 mb-[12px]">
             <h1
               data-animate-item
-              className="home-title text-center text-[#132436] font-['Inter'] font-extrabold capitalize flex flex-col gap-1 tracking-tight"
+              className="text-[52px] text-center text-[#132436] font-['Inter'] font-extrabold capitalize flex flex-col gap-1 tracking-tight"
             >
               <div>
                 <span className="text-[#EB3609]">Find</span>{" "}
@@ -45,7 +45,7 @@ const HeroSection = () => {
             <p
               data-animate-item
               style={{ transitionDelay: "0.08s" }}
-              className="home-description max-w-[610px] mx-auto text-center text-[#62768B] font-['Manrope'] text-[20.4px]!"
+              className="home-description max-w-[610px] mx-auto text-center text-[#62768B] font-['Manrope'] text-[18px]!"
             >
               Reach decision-makers, build connections and grow your business
               with accurate email search
@@ -54,26 +54,26 @@ const HeroSection = () => {
 
           {/* Form Container */}
           <div
-            className="w-full max-w-full lg:max-w-[1250px] rounded-[24px] border border-solid border-[#ABE0E4] overflow-hidden mt-8 bg-cover bg-center bg-no-repeat min-h-[350px]"
+            className="home-container  flex flex-col items-center justify-center rounded-[24px] border border-solid border-[#ABE0E4] overflow-hidden mt-8 bg-cover bg-center bg-no-repeat min-h-[350px]"
             style={{
               backgroundImage: "url(/images/business-email-bg.png)",
             }}
           >
-            <div className="w-full h-full px-6 pt-7 sm:px-8 md:px-10 lg:px-12 flex flex-col items-center">
+            <div className="w-full h-full  max-w-[765px] mx-auto">
               {/* Form Title */}
               <div className="w-full max-w-full mb-[40px]">
                 <h2
                   data-animate-item
-                  className="home-subtitle text-center text-[#3A4A5A] font-['Inter']"
+                  className="text-[24px] text-center text-[#3A4A5A] font-['Inter']"
                 >
                   Find{" "}
-                  <span className="text-[#132436]">10 Free</span>{" "}
+                  <span className="text-[#132436] font-semibold">10 Free</span>{" "}
                   business emails monthly
                 </h2>
               </div>
 
               {/* Input Fields Container */}
-              <div className="w-full max-w-full mb-[40px]">
+              <div className="w-full max-w-full mb-[15px]">
                 <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-[10px]">
                   {/* Full Name Input */}
                   <input
@@ -106,9 +106,9 @@ const HeroSection = () => {
               <div className="w-full max-w-full">
                 <button
                   data-hover="lift"
-                  className="w-full sm:w-[580px] h-[60px] mx-auto rounded-[50px] bg-[#EB3609] flex items-center justify-center pt-4 pb-4 pl-6 pr-6 transition-all duration-300 shadow-lg cursor-pointer"
+                  className="w-full  h-[60px] mx-auto rounded-[50px] bg-[#EB3609] flex items-center justify-center pt-4 pb-4 pl-6 pr-6 transition-all duration-300 shadow-lg cursor-pointer"
                 >
-                  <span className="home-subtitle text-[22px]! text-center font-['Inter'] text-white">
+                  <span className="home-subtitle text-[18px]! text-center font-['Inter'] text-white">
                     Find Email
                   </span>
                 </button>

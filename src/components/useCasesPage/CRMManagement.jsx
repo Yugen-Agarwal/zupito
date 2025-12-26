@@ -31,7 +31,7 @@ const CRMManagement = () => {
               </h1>
             </div>
 
-            <div className="w-full max-w-full lg:max-w-[1362px] mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-[50px]">
+            <div className="home-container mx-auto flex flex-col lg:flex-row items-center lg:items-start gap-[50px]">
               <div className="w-full lg:max-w-[629px] lg:flex-1 flex flex-col gap-[21px]">
                 <div className="w-full flex flex-col gap-[8px]">
                   <div className="w-full flex flex-col gap-[14px]">

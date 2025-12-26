@@ -1,4 +1,3 @@
-import React from "react";
 import useScrollReveal from "../../hooks/useScrollReveal";
 
 const featureCards = [
@@ -45,7 +44,7 @@ const EmailFinder = () => {
   return (
     <section ref={sectionRef} data-animate="fade-up" className="w-full">
       {/* Container with responsive padding */}
-      <div className="home-container py-12 sm:py-16 md:py-20 lg:py-24 xl:py-28">
+      <div className="home-container py-8 sm:py-14 md:py-16 lg:py-20">
         {/* Main content block - responsive container */}
         <div className="w-full max-w-full  mx-auto">
           {/* Content wrapper with gap spacing */}
@@ -103,13 +102,13 @@ const EmailFinder = () => {
 
             {/* Feature Cards Grid Section */}
             <div className="w-full max-w-full mx-auto">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-[40px]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-[20px]">
                 {featureCards.map((card, idx) => (
                   <div
                     key={`${card.title}-${idx}`}
                     data-animate-item
                     style={{ transitionDelay: `${0.05 * (idx + 1)}s` }}
-                    className="rounded-[24px] border-2 border-[#EEF0F3] p-[40px] bg-[#F6F6FF] flex flex-col gap-[40px]"
+                    className="rounded-[18px] border-2 border-[#EEF0F3] p-[30px] bg-[#F6F6FF] flex flex-col gap-[40px]"
                   >
                     <div className="w-full">
                       <img
@@ -122,7 +121,7 @@ const EmailFinder = () => {
                       <h3 className="home-subtitle text-[#132436] font-['Inter'] capitalize">
                         {card.title}
                       </h3>
-                      <p className="home-description text-[#5F6A97] font-['Manrope']">
+                      <p className="home-description text-[#5F6A97] font-['Manrope'] font-normal!">
                         {card.description}
                       </p>
                     </div>

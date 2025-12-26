@@ -230,10 +230,10 @@ function Header() {
             </svg>
           </button>
           {/* Modal Header with Logo and Close Button */}
-          <div className="sticky top-0 bg-white border-b border-[#EEF0F3] px-4 sm:px-6 md:px-8 py-4 flex items-center justify-between z-10">
+          <div className="sticky top-0 bg-white border-b border-[#EEF0F3] px-4 sm:px-6 md:px-8 py-5 flex items-center justify-between z-10">
             {/* Logo */}
             <div className="shrink-0">
-              <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-9 md:h-10 w-auto" />
+              <img src="/images/websitelogo/zupito-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
             </div>
 
             {/* Close Button */}
@@ -380,7 +380,7 @@ function Header() {
                   />
                   <span
                     className="text-[#132436] whitespace-nowrap lg:text-[14px] xl:text-[15.3px]"
-                    style={{ fontFamily: 'Manrope', fontWeight: 700 , lineHeight: '110%' }}
+                    style={{ fontFamily: 'Manrope', fontWeight: 700, lineHeight: '110%' }}
                   >
                     Start for Free
                   </span>
