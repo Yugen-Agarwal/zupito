@@ -33,7 +33,7 @@ const Footer = () => {
                       <div className="flex flex-col gap-4 sm:gap-[16px] w-full items-center md:items-start">
                         <h1
                           data-animate-item
-                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[32px]! sm:text-[36px]! md:text-[40px]! xl:text-[44px]! leading-16!"
+                          className="home-title max-w-[450px] md:max-w-[600px] text-white capitalize font-['Inter'] text-[32px]! sm:text-[36px]! md:text-[40px]! xl:text-[44px]! leading-12! lg:leading-16! "
                         >
                           Sign Up For{" "}
                           <span
@@ -91,7 +91,7 @@ const Footer = () => {
                 </div>
 
                 {/* Image Section */}
-                <div className="w-full md:w-auto shrink-0 flex items-center justify-center md:justify-end relative">
+                <div className="w-full md:w-auto shrink-0 flex items-center justify-center md:justify-end relative pt-5 md:pt-0">
                   <div
                     className="relative w-full flex items-center justify-center overflow-visible"
                     style={{ maxWidth: "clamp(200px, 35vw, 350px)" }}
@@ -117,9 +117,9 @@ const Footer = () => {
 
             <div className="flex flex-col gap-4 px-6! sm:px-8! md:px-12! lg:px-16! xl:px-24! 2xl:px-32!">
               <div className="w-full max-w-full mx-auto mt-6! md:mt-8! lg:mt-12! flex flex-col lg:flex-row gap-4">
-                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-3! md:py-5! px-8! flex flex-col gap-5! md:gap-7!">
+                <div className="flex-1 rounded-[16px] bg-[#1C2D3E] py-3! md:py-5! px-8! flex flex-col gap-3! md:gap-5!">
                   <div className="text-white font-extrabold text-[30px] sm:text-[36px] md:text-[42px] leading-[110%]">
-              <img src="/images/footer-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
+                    <img src="/images/footer-logo.png" alt="Zupito" className="h-6 sm:h-7 md:h-[30px] lg:h-[34.5px] w-auto" />
                   </div>
                   <p className="text-[#546779] text-[15px] sm:text-[18px] leading-[28px] md:leading-[32px] max-w-[760px] font-['Manrope']">
                     From dynamic visuals to interactive features, our software
